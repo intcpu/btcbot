@@ -31,13 +31,13 @@ Quantitative robot for bitmex or other Exchange
 * data 历史数据
 * logs 执行日志
 * process 进程类,每个类会在独立的进程中执行
->bitmexPrivateWsProcess.py  bitmex个人账户信息websocket推送
->bitmexPublicWsProcess.py bitmex公开信息信息websocket推送
->bitmexRestProcess.py bitmex 下单请求进程
->config.py bitmex配置信息
->processInterface.py 进程接口
->strategyProcess.py 策略进程  加载strategy目录下的策略类
->userProcess.py 用户信息进程  所有公开和私有在此进程中组合到manager进程
+ >bitmexPrivateWsProcess.py  bitmex个人账户信息websocket推送<br>
+ >bitmexPublicWsProcess.py bitmex公开信息信息websocket推送<br>
+ >bitmexRestProcess.py bitmex 下单请求进程<br>
+ >config.py bitmex配置信息<br>
+ >processInterface.py 进程接口<br>
+ >strategyProcess.py 策略进程  加载strategy目录下的策略类<br>
+ >userProcess.py 用户信息进程  所有公开和私有在此进程中组合到manager进程<br>
 * strategy 策略类,由strategyProcess加载
 * master.py 启动加载manager进程,管理所有进程,自动重起、重载其他进程
 * setup.py 主入口,主进程,被杀后,其他进程自杀(manager无法自杀)
